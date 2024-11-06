@@ -1,0 +1,88 @@
+/* Cấu hình chung cho toàn bộ trang */
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng cho thanh điều hướng */
+nav {
+    background-color: #006EFF; /* Blue Tone */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Hiển thị các mục theo chiều ngang */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #FFEB3B; /* Màu vàng sáng khi hover */
+    text-decoration: underline; /* Thêm gạch chân */
+}
+
+/* Định dạng cho các phần nội dung */
+section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #E6E6E6; /* Neutral Tone */
+    margin-bottom: 20px; /* Khoảng cách giữa các phần */
+}
+
+section:nth-child(odd) {
+    background-color: #FFF3BD; /* Yellow Tone */
+}
+
+section figure {
+    margin: 0 20px 0 0;
+    max-width: 300px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Định dạng văn bản */
+section p {
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #A6A6A6; /* Neutral Tone */
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Thanh điều hướng dạng dọc */
+        align-items: center;
+    }
+    section {
+        flex-direction: column; /* Các phần nội dung xếp theo cột */
+    }
+}
